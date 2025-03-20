@@ -1,4 +1,4 @@
-import logo from "../../assets/images/zufta-Logo1.png";
+import logo from "../../assets/images/zufta-logo1.png";
 import footer from "../../assets/images/footer.png";
 import { IoLocation } from "react-icons/io5";
 import { FaClock } from "react-icons/fa";
