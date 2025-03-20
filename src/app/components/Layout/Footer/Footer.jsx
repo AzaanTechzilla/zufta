@@ -109,7 +109,7 @@ const Footer = () => {
             <div className="basis-[49%] lg:basis-[31%] flex flex-col gap-4 items-start">
               <h5 className="font-bold text-lg font-manrope">Follow us</h5>
               <div className="flex items-center gap-1">
-                {icons.map((icon, index) => (
+                {icons?.map((icon, index) => (
                   <div
                     className="bg-gray-200 rounded-full p-2 cursor-pointer"
                     key={index}
@@ -130,7 +130,7 @@ const Footer = () => {
             <div className="basis-[50%] lg:basis-[30%] flex flex-col gap-5 ">
               <h5 className="font-bold text-lg font-manrope MB-5">Payments</h5>
               <div className="flex gap-2">
-                {footerpaymentsec.map((items, index) => (
+                {footerpaymentsec?.map((items, index) => (
                   <figure key={index}>
                     <Image
                       src={items.img}

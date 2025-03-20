@@ -1,5 +1,5 @@
-import logo from "../../../public/assets/images/zufta-Logo1.png";
-import footer from "../../../public/assets/images/footer.png";
+import logo from "../../assets/images/zufta-Logo1.png";
+import footer from "../../assets/images/footer.png";
 import { IoLocation } from "react-icons/io5";
 import { FaClock } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -8,11 +8,12 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import img1 from "../../../public/assets/images/image1.png"
-import img2 from "../../../public/assets/images/image2.png"
-import img3 from "../../../public/assets/images/image3.png"
-import img4 from "../../../public/assets/images/image4.png"
-import img5 from "../../../public/assets/images/image5.png"
+import img1 from "../../assets/images/image1.png"
+import img2 from "../../assets/images/image2.png"
+import img3 from "../../assets/images/image3.png"
+import img4 from "../../assets/images/image4.png"
+import img5 from "../../assets/images/image5.png";
+import { IoIosArrowDown } from "react-icons/io";
 
 const images = { logo, footer, img1,img2, img3, img4, img5  };
 const Icons={
@@ -23,7 +24,8 @@ const Icons={
     insta: RiInstagramFill,
     youtube: FaYoutube,
     facebook: FaFacebookSquare,
-    twitter: FaTwitter
+    twitter: FaTwitter,
+    arrow: IoIosArrowDown
 }
 const footerpaymentsec= [
     {

@@ -23,7 +23,7 @@ color: white;
 padding: 20px 30px;
 }
 footer{
-  background-image: url(../../public/assets/images/footer.png);
+  background-image: url(../assets/images/footer.png);
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;

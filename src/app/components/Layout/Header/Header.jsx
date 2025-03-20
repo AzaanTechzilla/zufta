@@ -1,8 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import { IoIosArrowDown } from "react-icons/io";
-import Logo from "../../../../../public/assets/images/zufta-Logo1.png"
 import Image from "next/image";
+import { images, Icons } from "@/app/api/Api";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -12,7 +11,7 @@ const Header = () => {
           <div className="flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image
-                src={Logo}
+                src={images.logo}
                 className=""
                 alt="Flowbite Logo"
               />
@@ -45,7 +44,7 @@ const Header = () => {
                   <div className="relative inline-block">
                     <button onClick={() => setIsOpen(!isOpen)} className=" flex items-center justify-center  ">
                       Dropdown{" "}
-                     <IoIosArrowDown size={20} className="ml-2" />
+                      <Icons.arrow size={20} className="ml-2"  />
                     </button>
 
                     {isOpen && (
