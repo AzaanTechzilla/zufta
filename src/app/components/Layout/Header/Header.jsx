@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <>
       <header>
-        <nav className="container mx-auto">
+        <nav className="container sm:mx-auto px-3 ">
           <div className="flex flex-wrap items-center justify-between mx-auto p-4">
             <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
               <Image

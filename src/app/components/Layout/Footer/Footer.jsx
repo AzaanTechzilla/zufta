@@ -93,7 +93,7 @@ const Footer = () => {
                 <p className="font-manrope">
                   No ads. No trails. No commitments
                 </p>
-                <div className="flex flex-col flex-wrap gap-2">
+                <div className="flex flex-row gap-3 sm:flex-col flex-wrap sm:gap-2">
                   <p className="flex items-center text-[#1A2B48] text-lg md:text-xl lg:text-2xl font-manrope font-medium gap-2">
                     <Icons.phone size={20} color="#1A2B48" />
                     Need help? Call us
@@ -105,8 +105,8 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer-sec-content flex items-center flex-wrap justify-start lg:justify-center gap-3 sm:gap-3 lg:gap-5 py-3  ">
-            <div className="basis-[49%] lg:basis-[31%] flex flex-col gap-4 items-start">
+          <div className="footer-sec-content flex items-center flex-wrap justify-start lg:justify-center gap-3 sm:gap-5 lg:gap-10 py-3  ">
+            <div className="basis-[47%] sm:basis-[48%] lg:basis-[31%] flex flex-col gap-4 items-start">
               <h5 className="font-bold text-lg font-manrope">Follow us</h5>
               <div className="flex items-center gap-1">
                 {icons?.map((icon, index) => (
@@ -119,15 +119,15 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-            <div className=" basis-[49%] lg:basis-[30%] flex flex-col gap-2">
+            <div className="basis-[47%] sm:basis-[49%] lg:basis-[30%] flex flex-col gap-2">
               <h5 className="font-bold text-lg font-manrope MB-5">
                 We are registered
               </h5>
-              <p className="font-manrope">
+              <p className="font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>
                 Exploring new destinations can be one of life's greatest joys.
               </p>
             </div>
-            <div className="basis-[50%] lg:basis-[30%] flex flex-col gap-5 ">
+            <div className="basis-[47%] sm:basis-[50%] lg:basis-[30%] flex flex-col gap-5 ">
               <h5 className="font-bold text-lg font-manrope MB-5">Payments</h5>
               <div className="flex gap-2">
                 {footerpaymentsec?.map((items, index) => (
@@ -144,12 +144,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-third-content flex items-center justify-between flex-wrap border-t-[1.2px] py-5 border-gray-200">
-            <p className="basis-[100%] md:basis-[40%] font-manrope text-gray-400">© 2024 Travila Inc. All rights reserved.</p>
+            <p className="basis-[100%] md:basis-[40%] font-manrope text-[#737373]" style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>© 2024 Travila Inc. All rights reserved.</p>
             <div className=" basis-[100%] md:basis-[60%] flex items-center justify-start md:justify-end gap-5">
-              <Link href='' className="text-gray-400 font-manrope" style={{fontSize: 'clamp(0.5rem, 8vw, 1rem)'}}>Terms</Link>
-              <Link href='' className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 1rem)'}} >Privacy policy</Link>
-              <Link href=''  className="text-gray-400  font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 1rem)'}}>Legal notice</Link>
-              <Link href=''  className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 1rem)'}}>Accessibility</Link>
+              <Link href='' className="text-gray-400 font-manrope" style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Terms</Link>
+              <Link href='' className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}} >Privacy policy</Link>
+              <Link href=''  className="text-gray-400  font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Legal notice</Link>
+              <Link href=''  className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Accessibility</Link>
             </div>
           </div>
         </div>
