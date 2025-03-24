@@ -1,31 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Marcellus&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @plugin 'tailwindcss-animate';
 
 @custom-variant dark (&:is(.dark *));
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Marcellus&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 @theme {
   --font-marcellus: "Marcellus", serif;
   --font-manrope: "Manrope", sans-serif;
-  --primary: #1A2B48,
+  --color-primary: #1a2b48;
 }
-
 body {
   background: white !important;
   color: black !important;
- font-family: var(--font-marcellus) !important;
+  font-family: var(--font-marcellus) !important;
 }
-.btn{
-background-color: var(--primary);
-border-radius: 50%;
-color: white;
-padding: 20px 30px;
+.btn {
+  background-color: #1a2b48;
+  color: white;
 }
-footer{
-  background-image: url(../assets/images/footer.png);
+footer {
+  background-image: url("/assets/images/footer.png");
   background-position: bottom;
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid black;
 }
+a {
+  margin: 0 clamp(5px, 8vw, 10px);
+  font-size: clamp(12px, 8vw, 15px);
+}
+.banner{
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 200px 900px 10px inset;
+}
+.plantrip{
+  background-image: url(/assets/images/plantrip.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px 200px 900px 10px inset;
+}
+

@@ -1,5 +1,3 @@
-import logo from "../../assets/images/zufta-logo1.png";
-import footer from "../../assets/images/footer.png";
 import { IoLocation } from "react-icons/io5";
 import { FaClock } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -8,42 +6,48 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import img1 from "../../assets/images/image1.png"
-import img2 from "../../assets/images/image2.png"
-import img3 from "../../assets/images/image3.png"
-import img4 from "../../assets/images/image4.png"
-import img5 from "../../assets/images/image5.png";
 import { IoIosArrowDown } from "react-icons/io";
+import { FaBarsStaggered } from "react-icons/fa6";
 
-const images = { logo, footer, img1,img2, img3, img4, img5  };
-const Icons={
-    location: IoLocation,
-    clock: FaClock,
-    mail: IoMdMail,
-    phone:PiPhoneCallFill,
-    insta: RiInstagramFill,
-    youtube: FaYoutube,
-    facebook: FaFacebookSquare,
-    twitter: FaTwitter,
-    arrow: IoIosArrowDown
-}
-const footerpaymentsec= [
-    {
-        img: img1
-    },
-    {
-        img: img2
-    },
-    {
-        img: img3
-    },
-    {
-        img: img4
-    },
-    {
-        img: img5
-    },
-]
+// ✅ Use direct paths instead of imports
+const images = {
+  logo: "/assets/images/zufta-logo1.png",
+  footer: "/assets/images/footer.png",
+  img1: "/assets/images/image1.png",
+  img2: "/assets/images/image2.png",
+  img3: "/assets/images/image3.png",
+  img4: "/assets/images/image4.png",
+  img5: "/assets/images/image5.png",
+  contactbannerimg: "/assets/images/contactbanner.jpg",
+  homebannerimg: "/assets/images/homebanner.jpg",
+  homethirdsec: "/assets/images/img.png",
+  comma: "/assets/images/comma.png",
+  tourist: "/assets/images/tourist.png",
+  tourist1: "/assets/images/tourist1.png",
+  tourist2: "/assets/images/tourist2.png",
+  tourist3: "/assets/images/tourist3.png",
+};
 
-export {images, Icons ,footerpaymentsec};
+const Icons = {
+  location: IoLocation,
+  clock: FaClock,
+  mail: IoMdMail,
+  phone: PiPhoneCallFill,
+  insta: RiInstagramFill,
+  youtube: FaYoutube,
+  facebook: FaFacebookSquare,
+  twitter: FaTwitter,
+  arrow: IoIosArrowDown,
+  menu: FaBarsStaggered,
+};
 
+// ✅ Update footer images to use paths directly
+const footerpaymentsec = [
+  { img: "/assets/images/image1.png" },
+  { img: "/assets/images/image2.png" },
+  { img: "/assets/images/image3.png" },
+  { img: "/assets/images/image4.png" },
+  { img: "/assets/images/image5.png" },
+];
+
+export { images, Icons, footerpaymentsec };

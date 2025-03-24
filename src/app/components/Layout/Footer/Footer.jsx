@@ -19,12 +19,12 @@ const Footer = () => {
   ];
   return (
     <>
-      <footer className="min-h-screen">
-        <div className="container sm:mx-auto px-3 ">
+      <footer className="py-10">
+        <div className="container sm:mx-auto px-3 sm:px-0 ">
           <div className="footer-content flex items-start lg:justify-center gap-3 sm:gap-3 lg:gap-5 flex-wrap py-2">
             <div className="basis-[100%] sm:basis-[49%]  lg:basis-[32%] flex-wrap flex flex-col items-start justify-start gap-4">
               <figure>
-                <Image
+                <img
                   src={images.logo}
                   alt="Logo"
                   width="100%"
@@ -94,11 +94,11 @@ const Footer = () => {
                   No ads. No trails. No commitments
                 </p>
                 <div className="flex flex-row gap-3 sm:flex-col flex-wrap sm:gap-2">
-                  <p className="flex items-center text-[#1A2B48] text-lg md:text-xl lg:text-2xl font-manrope font-medium gap-2">
+                  <p className="flex items-center text-[#1A2B48] lg:text-xl md:text-lg text-md  font-manrope font-bold gap-2">
                     <Icons.phone size={20} color="#1A2B48" />
                     Need help? Call us
                   </p>
-                  <p className="lg:text-3xl md:text-2xl text-xl  font-medium font-manrope text-[#1A2B48]  ">
+                  <p className="lg:text-2xl md:text-xl text-lg  font-bold font-manrope text-[#1A2B48]  ">
                     1-800-222-8888
                   </p>
                 </div>
@@ -123,7 +123,10 @@ const Footer = () => {
               <h5 className="font-bold text-lg font-manrope MB-5">
                 We are registered
               </h5>
-              <p className="font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>
+              <p
+                className="font-manrope"
+                style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+              >
                 Exploring new destinations can be one of life's greatest joys.
               </p>
             </div>
@@ -132,7 +135,7 @@ const Footer = () => {
               <div className="flex gap-2">
                 {footerpaymentsec?.map((items, index) => (
                   <figure key={index}>
-                    <Image
+                    <img
                       src={items.img}
                       alt="payments"
                       width="100%"
@@ -143,13 +146,42 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="footer-third-content flex items-center justify-between flex-wrap border-t-[1.2px] py-5 border-gray-200">
-            <p className="basis-[100%] md:basis-[40%] font-manrope text-[#737373]" style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>© 2024 Travila Inc. All rights reserved.</p>
+          <div className="footer-third-content flex items-center justify-between flex-wrap border-t-[1.2px] py-5 mt-5 border-gray-200">
+            <p
+              className="basis-[100%] md:basis-[40%] font-manrope text-[#737373]"
+              style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+            >
+              © 2024 Travila Inc. All rights reserved.
+            </p>
             <div className=" basis-[100%] md:basis-[60%] flex items-center justify-start md:justify-end gap-5">
-              <Link href='' className="text-gray-400 font-manrope" style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Terms</Link>
-              <Link href='' className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}} >Privacy policy</Link>
-              <Link href=''  className="text-gray-400  font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Legal notice</Link>
-              <Link href=''  className="text-gray-400 font-manrope"style={{fontSize: 'clamp(0.5rem, 8vw, 0.9rem)'}}>Accessibility</Link>
+              <Link
+                href=""
+                className="text-gray-400 font-manrope"
+                style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+              >
+                Terms
+              </Link>
+              <Link
+                href=""
+                className="text-gray-400 font-manrope"
+                style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+              >
+                Privacy policy
+              </Link>
+              <Link
+                href=""
+                className="text-gray-400  font-manrope"
+                style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+              >
+                Legal notice
+              </Link>
+              <Link
+                href=""
+                className="text-gray-400 font-manrope"
+                style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
+              >
+                Accessibility
+              </Link>
             </div>
           </div>
         </div>
