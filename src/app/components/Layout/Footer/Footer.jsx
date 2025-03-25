@@ -50,7 +50,7 @@ const Footer = () => {
               <h4 className=" text-xl font-bold font-manrope">Company</h4>
               <div className="flex flex-col items-center justify-center w-full gap-5">
                 <div className="w-full flex items-center justify-between ">
-                  <Link href="" className="text-[#575756] font-manrope">
+                  <Link href="/aboutus" className="text-[#575756] font-manrope">
                     About Us
                   </Link>
                   <Link href="" className="text-[#575756] font-manrope">
