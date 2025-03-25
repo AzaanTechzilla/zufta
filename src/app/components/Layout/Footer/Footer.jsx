@@ -148,12 +148,13 @@ const Footer = () => {
           </div>
           <div className="footer-third-content flex items-center justify-between flex-wrap border-t-[1.2px] py-5 mt-5 border-gray-200">
             <p
-              className="basis-[100%] md:basis-[40%] font-manrope text-[#737373]"
+              className="basis-[100%] md:basis-[40%] text-center sm:text-start font-manrope text-[#737373]"
               style={{ fontSize: "clamp(0.5rem, 8vw, 0.9rem)" }}
             >
               © 2024 Travila Inc. All rights reserved.
             </p>
-            <div className=" basis-[100%] md:basis-[60%] flex items-center justify-start md:justify-end gap-5">
+            <div className=" basis-[100%] md:basis-[60%] flex flex-col sm:flex-row items-center justify-center md:justify-end gap-2 mt-3 sm:mt-0 sm:gap-5">
+              <div className="flex items-center justify-center gap-5">
               <Link
                 href=""
                 className="text-gray-400 font-manrope"
@@ -168,6 +169,8 @@ const Footer = () => {
               >
                 Privacy policy
               </Link>
+              </div>
+              <div className="flex items-center justify-center gap-5">
               <Link
                 href=""
                 className="text-gray-400  font-manrope"
@@ -182,6 +185,7 @@ const Footer = () => {
               >
                 Accessibility
               </Link>
+                </div>
             </div>
           </div>
         </div>

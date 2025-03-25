@@ -40,4 +40,9 @@ a {
   background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.50) 0px 200px 900px 10px inset;
 }
-
+.blogcard{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: rgba(0, 0, 0, 0.50) 0px -100px 900px 10px inset;
+}

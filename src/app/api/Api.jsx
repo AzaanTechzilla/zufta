@@ -8,7 +8,8 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
-
+import { FaArrowRightLong } from "react-icons/fa6";
+import { SlCalender } from "react-icons/sl";
 // ✅ Use direct paths instead of imports
 const images = {
   logo: "/assets/images/zufta-logo1.png",
@@ -26,6 +27,15 @@ const images = {
   tourist1: "/assets/images/tourist1.png",
   tourist2: "/assets/images/tourist2.png",
   tourist3: "/assets/images/tourist3.png",
+  aboutbanner: "/assets/images/aboutbanner.jpg",
+  payment: "/assets/images/payment.png.png",
+  payment2: "/assets/images/payment2.png.png",
+  payment3: "/assets/images/payment3.png.png",
+  payment4: "/assets/images/payment4.png.png",
+  payment5: "/assets/images/payment5.png.png",
+  blog1: "/assets/images/blog1.png",
+  blog2: "/assets/images/blog2.jpg",
+  blog3: "/assets/images/blog3.jpg",
 };
 
 const Icons = {
@@ -39,6 +49,8 @@ const Icons = {
   twitter: FaTwitter,
   arrow: IoIosArrowDown,
   menu: FaBarsStaggered,
+  rightarrow: FaArrowRightLong,
+  calender: SlCalender,
 };
 
 // ✅ Update footer images to use paths directly

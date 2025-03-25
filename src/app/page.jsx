@@ -61,7 +61,7 @@ export default function Home() {
               </figure>
             </div>
             <div className="flex justify-center">
-              <p className=" py-3 md:py-5  text-center lg:w-[85%] w-full ">
+              <p className=" py-3 md:py-5 px-3 text-center lg:w-[85%] w-full ">
                 Exploring new destinations can be one of life's greatest joys.
                 From the bustling streets of Tokyo to the serene beaches of
                 Bali, travel opens up a world of experiences. Whether you're
@@ -80,7 +80,7 @@ export default function Home() {
               </figure>
             </div>
             <div className="flex justify-center">
-              <p className=" py-3 md:py-5  text-center lg:w-[89%] w-full ">
+              <p className=" py-3 md:py-5 px-3  text-center lg:w-[89%] w-full ">
                 Exploring new destinations can be one of life's greatest joys.
                 From the bustling streets of Tokyo to the serene beaches of
                 Bali, travel opens up a world of experiences. Whether you're

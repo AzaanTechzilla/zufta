@@ -21,9 +21,9 @@ const Banner = () => {
       image: images.homebannerimg,
       buttonText: "Explore More",
     },
-    about: {
+    aboutus: {
       title: "About Us",
-      image: "/assets/images/aboutBanner.jpg",
+      image: images.aboutbanner,
     },
     contact: {
       title: "Contact Us",
