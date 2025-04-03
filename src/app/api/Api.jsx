@@ -68,6 +68,65 @@ const vectorarray = [
     img: vector4,
   },
 ];
+ const homeTourPickup = [
+  {
+      id: 1,
+      title: 'Naran Kaghan',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '105,000'
+  },
+  {
+      id: 2,
+      title: 'Hunza',
+      image: Alltourimg1,
+      duration: '4 days trip',
+      price: '95,000'
+  },
+  {
+      id: 3,
+      title: 'Swat Kalam',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '125,000'
+  },
+  {
+      id: 4,
+      title: 'Neelam Valley',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '85,000'
+  },
+  {
+      id: 5,
+      title: 'Swat Kalam',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '125,000'
+  },
+  {
+      id: 6,
+      title: 'Neelam Valley',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '85,000'
+  },
+  {
+      id: 7,
+      title: 'Naran Kaghan',
+      image: Alltourimg1,
+      duration: '5 days trip',
+      price: '105,000'
+  },
+  {
+      id: 8,
+      title: 'Hunza',
+      image: Alltourimg1,
+      duration: '4 days trip',
+      price: '95,000'
+  },
+]
+
 const tourTypearray = [
   {
     title: "Naran Kaghan",
@@ -234,4 +293,5 @@ export {
   vectorarray,
   tourarray,
   tourTypearray,
+  homeTourPickup,
 };

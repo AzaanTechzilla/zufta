@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import Banner from "./components/Banner/Banner";
-import { images, vectorarray, tourarray } from "./api/Api";
+import {homeTourPickup, images, vectorarray, tourarray } from "./api/Api";
 import Image from "next/image";
 import TourCard from "./components/Card/TourCard";
 
@@ -57,31 +57,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-    <section className="hometour-sec py-5">
-      <div className="container mx-auto px-3 sm:px-0">
-        <div className="hometour-sec min-h-screen">
-        <h2
-          className="font-medium text-center pb-3"
-          style={{ fontSize: "clamp(20px, 8vw, 2.8rem)" }}
-        >
-          Tours Handpicked for you
-        </h2>
-<div className="flex items-center justify-center gap-2 min-h-full ">
-  {tourarray?.map((items, index)=>{
-    return(
-      <TourCard items={items} index={index} />
-    )
-  })}
-
-</div>
-        </div>
-      </div>
-    </section>
     <section>
         <div className="wrapper-H3 py-10 md:pt-20 px-5">
           <div className="container">
             <div className="flex flex-col">
-              <h1 className="text-center">Tours Handpicked for you</h1>
+              <h1 className="text-center "style={{fontSize: "clamp(20px , 8vw, 3rem)"}}>Tours Handpicked for you</h1>
               <div className="flex flex-wrap justify-center mt-16">
                 {homeTourPickup.map((items, index) => {
                   return (
