@@ -3,13 +3,6 @@
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 import { images } from "@/app/api/Api";
-import {
-  Menu,
-  MenuHandler,
-  MenuList,
-  MenuItem,
-  Button,
-} from "@material-tailwind/react";
 
 const Banner = () => {
   const pathname = usePathname();
@@ -29,6 +22,11 @@ const Banner = () => {
       title: "Contact Us",
       image: images.contactbannerimg,
     },
+    alltours: {
+      title: "All Tours",
+      image: images.alltoursbannerimg,
+
+    }
   };
 
   const { title, image, buttonText } = banners[pageKey] || banners["home"];

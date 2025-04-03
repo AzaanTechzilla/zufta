@@ -9,7 +9,7 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="fixed top-2 left-1/2 -translate-x-1/2 w-[95%] z-10 bg-[#ffffffba] rounded-full px-2">
+    <header className="fixed top-2 left-1/2 -translate-x-1/2 w-[95%] z-10 backdrop-blur-xl rounded-full px-2">
       <nav className="container sm:mx-auto px-3 sm:px-0">
         <div className="flex items-center justify-between py-1">
           {/* Logo */}

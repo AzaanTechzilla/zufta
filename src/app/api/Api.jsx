@@ -10,7 +10,15 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
-// ✅ Use direct paths instead of imports
+import { MdSecurity } from "react-icons/md";
+import vector from "@/images/Vector.png";
+import vector1 from "@/images/Vector1.png";
+import vector2 from "@/images/Vector2.png";
+import vector3 from "@/images/Vector3.png";
+import vector4 from "@/images/Vector4.png";
+import tour1 from "@/images/tour1.jpg";
+import Alltourimg1 from "@/images/alltoursimg1.jpg";
+
 const images = {
   logo: "/assets/images/zufta-logo1.png",
   footer: "/assets/images/footer.png",
@@ -36,8 +44,130 @@ const images = {
   blog1: "/assets/images/blog1.png",
   blog2: "/assets/images/blog2.jpg",
   blog3: "/assets/images/blog3.jpg",
+  explore: "/assets/images/explore.jpg",
+  premium: "/assets/images/premium.png",
+  private: "/assets/images/private.png",
+  aboutusimg2: "/assets/images/about-us-img-2.png",
+  tour1: "/assets/images/tour1.jpg",
+  alltoursbannerimg: "/assets/images/alltours.jpg",
 };
-
+const vectorarray = [
+  {
+    img: vector,
+  },
+  {
+    img: vector1,
+  },
+  {
+    img: vector2,
+  },
+  {
+    img: vector3,
+  },
+  {
+    img: vector4,
+  },
+];
+const tourTypearray = [
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    img: Alltourimg1,
+    basis: "25%",
+    basis2: "100%",
+  },
+];
 const Icons = {
   location: IoLocation,
   clock: FaClock,
@@ -51,7 +181,42 @@ const Icons = {
   menu: FaBarsStaggered,
   rightarrow: FaArrowRightLong,
   calender: SlCalender,
+  security: MdSecurity,
 };
+const tourarray = [
+  {
+    title: "Naran Kaghan",
+    para: "5 days trip . From Rs.105,000",
+    title2: "Swat Kalam",
+    para2: "5 days trip . From Rs.125,000",
+    img: tour1,
+    img2: tour1,
+  },
+  {
+    title: "Hunza",
+    para: "5 days trip . From Rs.105,000",
+    title2: "Neelam Valley",
+    para2: "5 days trip . From Rs.125,000",
+    img: tour1,
+    img2: tour1,
+  },
+  {
+    title: "Swat Kalam",
+    para: "5 days trip . From Rs.105,000",
+    title2: "Naran Kaghan",
+    para2: "5 days trip . From Rs.125,000",
+    img: tour1,
+    img2: tour1,
+  },
+  {
+    title: "Neelam Valley",
+    para: "5 days trip . From Rs.105,000",
+    title2: "Hunza",
+    para2: "5 days trip . From Rs.125,000",
+    img: tour1,
+    img2: tour1,
+  },
+];
 
 // ✅ Update footer images to use paths directly
 const footerpaymentsec = [
@@ -62,4 +227,11 @@ const footerpaymentsec = [
   { img: "/assets/images/image5.png" },
 ];
 
-export { images, Icons, footerpaymentsec };
+export {
+  images,
+  Icons,
+  footerpaymentsec,
+  vectorarray,
+  tourarray,
+  tourTypearray,
+};
