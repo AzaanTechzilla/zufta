@@ -2,7 +2,8 @@
 
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
-import { images } from "@/app/api/Api";
+import { Icons, images } from "@/app/api/Api";
+import DatePicker from "react-datepicker";
 
 const Banner = () => {
   const pathname = usePathname();
@@ -25,8 +26,7 @@ const Banner = () => {
     alltours: {
       title: "All Tours",
       image: images.alltoursbannerimg,
-
-    }
+    },
   };
 
   const { title, image, buttonText } = banners[pageKey] || banners["home"];
@@ -56,7 +56,7 @@ const Banner = () => {
                 </button>
               </div>
               <div className="basis-1/2">
-                {/* <Tabs /> */}
+                <Tabs />
               </div>
             </div>
           </>
@@ -79,12 +79,8 @@ export default Banner;
 
 const Tabs = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [isOpen, setIsOpen] = useState(false);
   const tabs = ["Tours", "Hotels", "TravelerPayout Flight"];
-  const content = [
-    "Content for Tab 1",
-    "Content for Tab 2",
-    "Content for Tab 3",
-  ];
 
   return (
     <>
@@ -105,20 +101,60 @@ const Tabs = () => {
         <div className="p-4">
           {activeTab === 0 && (
             <>
-              <div className="">
-                <input type="dropdown"   />
-              {/* <Menu>
-      <MenuHandler>
-        <Button className="">Menu</Button>
-      </MenuHandler>
-      <MenuList>
-        <MenuItem>Menu Item 1</MenuItem>
-        <MenuItem>Menu Item 2</MenuItem>
-        <MenuItem>Menu Item 3</MenuItem>
-      </MenuList>
-    </Menu> */}
+              <div className="w-full bg-white rounded-2xl  p-4 flex items-center justify-between">
+                <div className="relative basis-1/2 px-2">
+                 <p className="text-gray-600">Location</p>
+                  <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className=" text-primary relative py-1 w-full rounded-md focus:outline-none flex items-center"
+                  >
+                    <Icons.location color="#D6D7D8" className="mr-1" /> Sharan <Icons.downarrow className="absolute right-0" />
+                  </button>
+
+                  {/* Dropdown Menu */}
+                  {isOpen && (
+                    <div className="absolute mt-2 w-48 bg-white border rounded-lg shadow-lg">
+                      <ul className="py-2">
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          Option 1
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          Option 2
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          Option 3
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
+                <div className="relative  basis-1/2 inline-block px-2">
+                 <p className="text-gray-600">Location</p>
+                  <button
+                    onClick={() => setIsOpen(!isOpen)}
+                    className=" text-primary py-1 rounded-md w-full relative focus:outline-none flex items-center"
+                  >
+                    <Icons.calender color="#D6D7D8" className="mr-1" /> <Icons.downarrow className="absolute right-0" />
+                  </button>
+
+                  {/* Dropdown Menu */}
+                  {isOpen && (
+                    <div className="absolute mt-2 w-48 bg-white border rounded-lg shadow-lg">
+                      <ul className="py-2">
+                        <li className="px-4 py-2 hotrazxsxszzzzver:bg-gray-100 cursor-pointer">
+                          Option 1
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          Option 2
+                        </li>
+                        <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                          Option 3
+                        </li>
+                      </ul>
+                    </div>
+                  )}
+                </div>
               </div>
-              
             </>
           )}
           {activeTab === 1 && (

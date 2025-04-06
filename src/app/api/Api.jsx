@@ -5,12 +5,20 @@ import { PiPhoneCallFill } from "react-icons/pi";
 import { RiInstagramFill } from "react-icons/ri";
 import { FaYoutube } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaAngleDown } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { MdSecurity } from "react-icons/md";
+import { MdDashboard } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa";
+import { FaHeart } from "react-icons/fa6";
+import { MdOutlineDashboard } from "react-icons/md";
+import { FaRegClock } from "react-icons/fa";
+import { CiSettings } from "react-icons/ci";
+import { IoMdSettings } from "react-icons/io";
 import vector from "@/images/Vector.png";
 import vector1 from "@/images/Vector1.png";
 import vector2 from "@/images/Vector2.png";
@@ -241,6 +249,14 @@ const Icons = {
   rightarrow: FaArrowRightLong,
   calender: SlCalender,
   security: MdSecurity,
+  downarrow: FaAngleDown,
+  dashboard: MdDashboard,
+  lineHeart: FaRegHeart,
+  fillheart: FaHeart,
+  linedashboard: MdOutlineDashboard,
+  lineclock: FaRegClock,
+  linesetting: CiSettings,
+  fillsetting:IoMdSettings,
 };
 const tourarray = [
   {
